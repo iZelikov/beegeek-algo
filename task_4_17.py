@@ -1,0 +1,1 @@
+get_max_prefix_sum = lambda nums: __import__('functools').reduce(lambda a, b: (a [0]+ b, max(a[0] + b, a[1])), nums, (0, float('-inf')))[1]
