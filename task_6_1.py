@@ -64,3 +64,6 @@ count_occurrences = lambda nums, target, start, end: sum(1 for i in range(start,
 
 def elements_in_the_range(nums: list[int], start: int, end: int):
     return set(range(start, end + 1)) == set(i for i in nums if start <= i <= end)
+
+
+
