@@ -12,7 +12,7 @@ from pathlib import Path
 # Запускайте test.py для проверки решений
 
 from tasks import *
-from task_6_3 import *
+from task_6_4 import *
 
 
 def timer(func):
