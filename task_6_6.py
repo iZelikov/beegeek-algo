@@ -43,7 +43,7 @@ def guess(num):
         return 'Отгадал!'
 
 
-def get_number(limit):
+def guess_number(limit):
     left = 1
     right = limit
     while left <= right:
@@ -56,5 +56,3 @@ def get_number(limit):
         else:
             print(mid)
             break
-
-get_number(10 ** 11)
