@@ -2,8 +2,6 @@ from zipfile import ZipFile
 import io
 import sys
 import os
-import time
-from functools import wraps
 from pathlib import Path
 
 # Пишите решения задач в файле tasks.py (или замените этот импорт на свой файл)
@@ -12,25 +10,7 @@ from pathlib import Path
 # Запускайте test.py для проверки решений
 
 from tasks import *
-from task_9_2 import *
-
-
-def timer(func):
-    """Декоратор для измерения времени выполнения функции."""
-
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        start_time = time.perf_counter()  # Начальное время
-        result = func(*args, **kwargs)  # Вызов целевой функции
-        end_time = time.perf_counter()  # Конечное время
-        elapsed_time = end_time - start_time  # Вычисление затраченного времени
-
-        # Вывод результата в секундах с округлением до 4 знаков
-        print(f"Функция {func.__name__!r} выполнилась за {elapsed_time:.4f} секунд")
-        return result
-
-    return wrapper
-
+from task_10_5 import *
 
 def get_latest_file(folder_path: str | Path = '', ext='zip'):
     files = os.listdir(folder_path)  # Получаем список файлов в каталоге
