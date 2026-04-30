@@ -11,6 +11,7 @@ from pathlib import Path
 
 from tasks import *
 from task_11_1 import *
+from task_12_1 import *
 
 def get_latest_file(folder_path: str | Path = '', ext='zip'):
     files = os.listdir(folder_path)  # Получаем список файлов в каталоге
