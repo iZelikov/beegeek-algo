@@ -128,3 +128,4 @@ def count_columns_with_max(matrix):
         if max_elem in (matrix[j][i] for j in range(len(matrix))):
             count += 1
     return count
+

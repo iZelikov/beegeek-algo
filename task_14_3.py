@@ -1,9 +1,7 @@
-def convert_to(num, base):
-    result = []
-    while num > 0:
-        result.append(num % base)
-        num //= base
-    print(*reversed(result))
+def hex_digit(num):
+    extra = {10: "A", 11: "B", 12: "C", 13: "D", 14: "E", 15: "F"}
+    return extra.get(num, num)
+
 
 def to_decimal(str_num, base):
     digits = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -19,4 +17,7 @@ def to_decimal(str_num, base):
     return result
 
 
-convert_to(to_decimal('76', 9) + to_decimal('24',5) - to_decimal('102',3), 4)
+def find_number_system(str_num, num):
+    for base in range(2, 37):
+        if to_decimal(str_num, base) == num:
+            return base
