@@ -10,7 +10,7 @@ from pathlib import Path
 # Запускайте test.py для проверки решений
 
 from tasks import *
-from task_14_4 import *
+from task_14_8 import *
 
 def get_latest_file(folder_path: str | Path = '', ext='zip'):
     files = os.listdir(folder_path)  # Получаем список файлов в каталоге
